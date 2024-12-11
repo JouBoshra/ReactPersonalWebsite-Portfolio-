@@ -1,0 +1,22 @@
+/* Ensure the tech-icons are centered both horizontally and vertically */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Ensure each container fills its parent */
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add space between icons */
+}
+
+/* Optional: Style for the text under the icons */
+.tech-icons p {
+  font-size: 14px;
+  margin-top: 10px;
+}

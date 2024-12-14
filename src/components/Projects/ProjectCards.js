@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Spinner from "react-bootstrap/Spinner";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import "./ProjectCard.css";
 
 function ProjectCards(props) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="image-container">
+        {isLoading && (
+          <div className="spinner-container">
+            <Spinner animation="border" variant="primary" />
+          </div>
+        )}
+        <Card.Img
+          variant="top"
+          src={props.imgPath}
+          alt="card-img"
+          onLoad={handleImageLoad}
+          style={{ display: isLoading ? "none" : "block" }}
+        />
+      </div>
       <Card.Body className="project-card-body">
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
@@ -27,7 +47,6 @@ function ProjectCards(props) {
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
 
-          {/* Demo Button */}
           {!props.isBlog && props.demoLink && (
             <Button
               variant="primary"

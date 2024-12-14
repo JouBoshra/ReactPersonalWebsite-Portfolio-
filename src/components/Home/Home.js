@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg"; // Your home image
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import "./Home.css"; // Ensure this is correctly imported
-
+import "./Home.css";
+const homeLogo = "/Assets/home-main.svg";
 function Home() {
   return (
     <section>
@@ -36,7 +35,7 @@ function Home() {
                 <img
                   src={homeLogo}
                   alt="home pic"
-                  id="home-main-svg" // Ensure the id matches the CSS selector
+                  id="home-main-svg"
                   className="img-fluid"
                   style={{ maxHeight: "450px" }}
                 />

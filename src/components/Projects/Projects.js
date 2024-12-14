@@ -4,14 +4,14 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 // Import your project images
-import businessImg from "../../Assets/Projects/business.png";
-import fitnessImg from "../../Assets/Projects/fitness.png";
-import weatherImg from "../../Assets/Projects/weather.jpg";
-import Danielporfolio from "../../Assets/Projects/portfolio.png";
-import bookmarkImg from "../../Assets/Projects/bookmark.jpg";
-import devfolioImg from "../../Assets/Projects/devFolio.png";
-import weatherReactImg from "../../Assets/Projects/weatherReact.jpg";
-import taskManagerImg from "../../Assets/Projects/taskManager.png";
+const businessImg = "/Assets/Projects/business.png";
+const fitnessImg = "/Assets/Projects/fitness.png";
+const weatherImg = "/Assets/Projects/weather.jpg";
+const Danielporfolio = "/Assets/Projects/portfolio.png";
+const bookmarkImg = "/Assets/Projects/bookmark.jpg";
+const devfolioImg = "/Assets/Projects/devFolio.png";
+const weatherReactImg = "/Assets/Projects/weatherReact.jpg";
+const taskManagerImg = "/Assets/Projects/taskManager.png";
 
 function Projects() {
   return (
@@ -35,7 +35,7 @@ function Projects() {
               title="Business Management Platform"
               description="Contributed as a team member at SprintsAI to develop a comprehensive business management platform. This platform optimizes business operations with modern tech stacks and integrates APIs for seamless functionality."
               ghLink="https://github.com/engrBassel/business-management-platform"
-              demoLink="https://business-management-platform.vercel.app"
+              demoLink="https://my-business2024.web.app/"
             />
           </Col>
 
@@ -47,7 +47,7 @@ function Projects() {
               title="Fitness Tracking App"
               description="Developed a fitness tracking app to help users log their workouts, track progress, and set fitness goals. Built with React and features a user-friendly interface and data visualization."
               ghLink="https://github.com/JouBoshra/Fitness-Tracking-App"
-              demoLink="https://my-business2024.web.app/"
+              demoLink="https://fitness-tracking-app-six.vercel.app/sign-in"
             />
           </Col>
 

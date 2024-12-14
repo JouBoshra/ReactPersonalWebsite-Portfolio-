@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png"; // Add your personal avatar image here
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai"; // GitHub icon
-import { FaLinkedinIn, FaFacebook } from "react-icons/fa"; // LinkedIn and Facebook icons
-import { FaYoutube } from "react-icons/fa"; // YouTube icon
-
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn, FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+const myImg = "/Assets/avatar.png";
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">

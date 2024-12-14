@@ -1,22 +1,48 @@
-/* Ensure the tech-icons are centered both horizontally and vertically */
 .icon-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%; /* Ensure each container fills its parent */
+  padding: 0.625rem;
+  height: 100%;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.tech-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px; /* Add space between icons */
+.achievement-icon {
+  color: #6c63ff;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Optional: Style for the text under the icons */
-.tech-icons p {
-  font-size: 14px;
+.achievement-icon:hover {
+  transform: scale(1.1) rotate(10deg);
+  color: #a078ff;
+}
+
+.achievement-btn {
   margin-top: 10px;
+  font-size: 12px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.achievement-btn:hover {
+  background-color: #a078ff;
+  transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

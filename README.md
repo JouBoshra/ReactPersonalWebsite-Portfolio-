@@ -12,14 +12,19 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/JouBoshra/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/JouBoshra/Portfolio?color=red&logo=github&style=for-the-badge)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/JouBoshra/ReactPersonalWebsite-Portfolio-?style=for-the-badge&logo=github) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/JouBoshra/ReactPersonalWebsite-Portfolio-?style=for-the-badge&logo=github)
 
 </center>
 
+---
+
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [JouBoshra](https://github.com/JouBoshra/Portfolio). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [JouBoshra](https://github.com/JouBoshra/ReactPersonalWebsite-Portfolio-). Thanks!
+
+---
 
 ## Built With
 
@@ -34,6 +39,8 @@ This project was built using these technologies:
 - VsCode
 - Vercel
 
+---
+
 ## Features
 
 **📖 Multi-Page Layout**
@@ -42,9 +49,13 @@ This project was built using these technologies:
 
 **📱 Fully Responsive**
 
+---
+
 ## Getting Started
 
 Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+
+---
 
 ## 🛠 Installation and Setup Instructions
 
@@ -56,10 +67,14 @@ Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\
 The page will reload if you make edits.
 
+---
+
 ## Usage Instructions
 
 Open the project folder and navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
+
+---
 
 ### Show your support
 

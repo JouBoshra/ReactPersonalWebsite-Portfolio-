@@ -1,10 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import "./About.css";
 import {
@@ -14,7 +13,12 @@ import {
   FaCogs,
   FaClock,
   FaBrain,
-} from "react-icons/fa"; // Soft Skills Icons
+  FaAward,
+  FaMedal,
+  FaCertificate,
+} from "react-icons/fa";
+
+const laptopImg = "/Assets/about.png";
 
 function About() {
   return (
@@ -53,7 +57,6 @@ function About() {
           <strong className="purple">Soft Skills</strong>
         </h1>
 
-        {/* Soft Skills Icons Row */}
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Col xs={4} md={2} className="tech-icons text-center">
             <div className="icon-container">
@@ -89,6 +92,61 @@ function About() {
             <div className="icon-container">
               <FaBrain size={100} />
               <p style={{ fontSize: "14px" }}>Critical Thinking</p>
+            </div>
+          </Col>
+        </Row>
+
+        <h1 className="project-heading">
+          <strong className="purple">Achievements</strong>
+        </h1>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons text-center">
+            <div className="icon-container">
+              <FaAward size={100} className="achievement-icon" />
+              <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                Recognized by Sprints
+              </p>
+              <Button
+                variant="primary"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7224747128835715072/"
+                target="_blank"
+                className="achievement-btn"
+              >
+                View
+              </Button>
+            </div>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons text-center">
+            <div className="icon-container">
+              <FaMedal size={100} className="achievement-icon" />
+              <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                Leadership in Action
+              </p>
+              <Button
+                variant="primary"
+                href="https://www.facebook.com/photo?fbid=602814518687019&set=a.397984175836722"
+                target="_blank"
+                className="achievement-btn"
+              >
+                View
+              </Button>
+            </div>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons text-center">
+            <div className="icon-container">
+              <FaCertificate size={100} className="achievement-icon" />
+              <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                Agile Workshop Leader
+              </p>
+              <Button
+                variant="primary"
+                href="https://www.facebook.com/permalink.php?story_fbid=pfbid02PFMfQfED9vkAijd6QWWVhnGACQ2a7mo5wJB9kzz5eJWJS4FKfhtWixVEV92iZzxhl&id=100068754286644"
+                target="_blank"
+                className="achievement-btn"
+              >
+                View
+              </Button>
             </div>
           </Col>
         </Row>

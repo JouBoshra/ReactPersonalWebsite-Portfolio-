@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-// Import your project images
 const businessImg = "/Assets/Projects/business.png";
 const fitnessImg = "/Assets/Projects/fitness.png";
 const weatherImg = "/Assets/Projects/weather.jpg";
@@ -12,6 +11,7 @@ const bookmarkImg = "/Assets/Projects/bookmark.jpg";
 const devfolioImg = "/Assets/Projects/devFolio.png";
 const weatherReactImg = "/Assets/Projects/weatherReact.jpg";
 const taskManagerImg = "/Assets/Projects/taskManager.png";
+const eCommerceWebsite = "/Assets/Projects/eCommerceWebsite.png";
 
 function Projects() {
   return (
@@ -30,6 +30,16 @@ function Projects() {
           {/* Project 1 */}
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={eCommerceWebsite}
+              isBlog={false}
+              title="E-Commerce Website"
+              description="A fully responsive E-Commerce application built using modern web technologies. It integrates real-world APIs, provides a seamless shopping experience, and includes dynamic cart functionality."
+              ghLink="https://github.com/JouBoshra/-E-Commerce-Website"
+              demoLink="https://e-commerce-website-rouge-gamma.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={businessImg}
               isBlog={false}
               title="Business Management Platform"
@@ -38,7 +48,6 @@ function Projects() {
               demoLink="https://my-business2024.web.app/"
             />
           </Col>
-
           {/* Project 2 */}
           <Col md={4} className="project-card">
             <ProjectCard

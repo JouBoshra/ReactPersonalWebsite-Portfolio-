@@ -1,0 +1,24 @@
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.home-svg-container img {
+  animation: floatAnimation 4s ease-in-out infinite;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
